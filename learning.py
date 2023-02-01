@@ -12,6 +12,9 @@ ys=[2, 6, 10]
 
 model.fit(xs, ys, epochs=1000)
 
-print(model.predict([7]))
+while(True):
+    number = input("Number: ")
+    n = float(number)
+    print("Result:", model.predict([n]))
 
 
